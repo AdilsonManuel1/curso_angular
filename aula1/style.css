@@ -4,31 +4,3 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.card img{
-    height: 100px;
-}
-.card{
-    width: 50%;
-    border: 1px solid;
-    display: flex; 
-   
-    justify-content: space-between;
-    box-shadow: 31px 17px 47px 0px rgba(0,0,0,0.75);
-}
-
-.card_left{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   padding-left: 5px;
-}
-.card_left > h1{
-    margin-top: 15px;
-    font-size: 25px;
-}
-.card_left > p{
-    color: gray;
-}
-.card_left >span{
-    font-weight: 300;
-}

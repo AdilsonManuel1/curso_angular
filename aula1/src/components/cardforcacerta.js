@@ -51,7 +51,48 @@ componentRoot.appendChild(card_right);
 
     return componentRoot;
 }
-style(){}
+style(){
+
+    const style = document.createElement("style");
+    // esse estilo é apenas para o componente
+    style.textContent= `
+    
+    .card img{
+        height: 100px;
+    }
+    .card{
+        width: 50%;
+        border: 1px solid;
+        display: flex; 
+        margin-bottom:10px;
+        justify-content: space-between;
+        box-shadow: 31px 17px 47px 0px rgba(0,0,0,0.75);
+    }
+    
+    .card_left{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding-left: 5px;
+    }
+    .card_left > a{
+        margin-top: 15px;
+        font-size: 25px;
+        text-decoration:none;
+        text-style:none;
+        color:black;
+        font-weight: bold;
+    }
+    .card_left > p{
+        color: gray;
+    }
+    .card_left >span{
+        font-weight: 300;
+    }
+    `;
+
+    return style;
+}
 
 }
 
